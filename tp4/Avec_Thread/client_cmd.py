@@ -18,6 +18,6 @@ def client(host, port):
     sock.shutdown(socket.SHUT_RDWR)
     sock.close()
 
-client("or-iut-i201-f20", 5557)
+client("localhost", 5557)
 
 #"or-iut-i201-f21"
