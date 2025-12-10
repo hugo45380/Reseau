@@ -1,0 +1,50 @@
+Nov 12 14:53:48.657 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Nov 12 14:53:48.657 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 44215.
+Nov 12 14:53:48.665 HYPERVISOR: exec_cmd: hypervisor version 
+Nov 12 14:53:48.668 HYPERVISOR: exec_cmd: hypervisor working_dir /home/iut45/Etudiants/o22303787/Documents/Reseau/TP1/nat/project-files/dynamips 
+Nov 12 14:53:48.668 GENERAL: working_dir=/home/iut45/Etudiants/o22303787/Documents/Reseau/TP1/nat/project-files/dynamips
+Nov 12 14:53:48.668 HYPERVISOR: exec_cmd: hypervisor working_dir /home/iut45/Etudiants/o22303787/Documents/Reseau/TP1/nat/project-files/dynamips/6f5551a0-db60-4622-80cd-8525faed94c2 
+Nov 12 14:53:48.668 GENERAL: working_dir=/home/iut45/Etudiants/o22303787/Documents/Reseau/TP1/nat/project-files/dynamips/6f5551a0-db60-4622-80cd-8525faed94c2
+Nov 12 14:53:48.669 HYPERVISOR: exec_cmd: vm create R1 1 c3600 
+Nov 12 14:53:48.673 VM: VM R1 created.
+Nov 12 14:53:48.675 HYPERVISOR: exec_cmd: vm set_con_tcp_port R1 5000 
+Nov 12 14:53:48.675 HYPERVISOR: exec_cmd: c3600 get_mac_addr R1 
+Nov 12 14:53:48.676 HYPERVISOR: exec_cmd: vm set_ios R1 /home/iut45/Etudiants/o22303787/GNS3/images/IOS/c3640-ik9o3s-mz.124-25c.image 
+Nov 12 14:53:48.679 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 12 14:53:48.679 HYPERVISOR: exec_cmd: vm set_idle_pc R1 0x605ef574 
+Nov 12 14:53:48.682 HYPERVISOR: exec_cmd: vm set_ram R1 192 
+Nov 12 14:53:48.684 HYPERVISOR: exec_cmd: vm set_nvram R1 256 
+Nov 12 14:53:48.688 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 12 14:53:48.689 HYPERVISOR: exec_cmd: vm slot_add_binding R1 0 0 NM-4E 
+Nov 12 14:53:48.781 HYPERVISOR: exec_cmd: vm set_ios R1 /home/iut45/Etudiants/o22303787/GNS3/images/IOS/c3640-ik9o3s-mz.124-25c.image 
+Nov 12 14:54:04.882 HYPERVISOR: exec_cmd: vm set_ios R1 /home/iut45/Etudiants/o22303787/GNS3/images/IOS/c3640-ik9o3s-mz.124-25c.image 
+Nov 12 14:54:52.262 HYPERVISOR: exec_cmd: nio create_udp udp-cd138e27-7a1c-4407-8d71-4b37d3590e7d 10006 127.0.0.1 10007 
+Nov 12 14:54:52.531 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 0 udp-cd138e27-7a1c-4407-8d71-4b37d3590e7d 
+Nov 12 14:54:52.534 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 12 14:54:55.281 HYPERVISOR: exec_cmd: nio create_udp udp-24c8b57f-7e0d-4dbc-9cba-b10ee41119d0 10010 127.0.0.1 10011 
+Nov 12 14:54:55.286 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 1 udp-24c8b57f-7e0d-4dbc-9cba-b10ee41119d0 
+Nov 12 14:54:55.289 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 12 14:55:24.358 HYPERVISOR: exec_cmd: vm create Ghost 0 c3600 
+Nov 12 14:55:24.366 VM: VM Ghost created.
+Nov 12 14:55:24.414 HYPERVISOR: exec_cmd: vm set_ios Ghost /home/iut45/Etudiants/o22303787/GNS3/images/IOS/c3640-ik9o3s-mz.124-25c.image 
+Nov 12 14:55:24.414 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Nov 12 14:55:24.419 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost /home/iut45/Etudiants/o22303787/Documents/Reseau/TP1/nat/project-files/dynamips/c3640-ik9o3s-mz.124-25c.image-192.ghost 
+Nov 12 14:55:24.455 HYPERVISOR: exec_cmd: vm set_ram Ghost 192 
+Nov 12 14:55:24.475 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Nov 12 14:55:24.480 HYPERVISOR: exec_cmd: vm set_config Ghost configs/i0_startup-config.cfg 
+Nov 12 14:55:24.480 HYPERVISOR: exec_cmd: vm start Ghost 
+Nov 12 14:55:25.405 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Nov 12 14:55:25.406 HYPERVISOR: exec_cmd: vm stop Ghost 
+Nov 12 14:55:26.345 VM: VM Ghost shutdown.
+Nov 12 14:55:26.350 HYPERVISOR: exec_cmd: vm extract_config Ghost 
+Nov 12 14:55:26.353 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Nov 12 14:55:26.353 VM: VM Ghost destroyed.
+Nov 12 14:55:26.381 HYPERVISOR: exec_cmd: vm set_ghost_status R1 2 
+Nov 12 14:55:26.382 HYPERVISOR: exec_cmd: vm set_ghost_file R1 /home/iut45/Etudiants/o22303787/Documents/Reseau/TP1/nat/project-files/dynamips/c3640-ik9o3s-mz.124-25c.image-192.ghost 
+Nov 12 14:55:26.386 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 12 14:55:26.388 HYPERVISOR: exec_cmd: vm set_config R1 configs/i1_startup-config.cfg 
+Nov 12 14:55:26.391 HYPERVISOR: exec_cmd: vm start R1 
+Nov 12 14:55:56.623 HYPERVISOR: exec_cmd: vm extract_config R1 
+Nov 12 14:58:26.653 HYPERVISOR: exec_cmd: vm extract_config R1 
+Nov 12 15:03:56.683 HYPERVISOR: exec_cmd: vm extract_config R1 
+Nov 12 15:05:26.691 HYPERVISOR: exec_cmd: vm extract_config R1 

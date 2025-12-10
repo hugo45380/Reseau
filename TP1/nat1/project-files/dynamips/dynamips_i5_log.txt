@@ -1,0 +1,30 @@
+Nov 12 14:54:31.529 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Nov 12 14:54:31.529 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 60703.
+Nov 12 14:54:31.543 HYPERVISOR: exec_cmd: hypervisor version 
+Nov 12 14:54:31.546 HYPERVISOR: exec_cmd: hypervisor working_dir /home/iut45/Etudiants/o22303787/Documents/Reseau/TP1/nat/project-files/dynamips 
+Nov 12 14:54:31.546 GENERAL: working_dir=/home/iut45/Etudiants/o22303787/Documents/Reseau/TP1/nat/project-files/dynamips
+Nov 12 14:54:31.547 HYPERVISOR: exec_cmd: hypervisor working_dir /home/iut45/Etudiants/o22303787/Documents/Reseau/TP1/nat/project-files/dynamips/e51e346d-d381-4e5d-a32c-ad8a306247e2 
+Nov 12 14:54:31.547 GENERAL: working_dir=/home/iut45/Etudiants/o22303787/Documents/Reseau/TP1/nat/project-files/dynamips/e51e346d-d381-4e5d-a32c-ad8a306247e2
+Nov 12 14:54:31.547 HYPERVISOR: exec_cmd: vm create R2 2 c3600 
+Nov 12 14:54:31.553 VM: VM R2 created.
+Nov 12 14:54:31.555 HYPERVISOR: exec_cmd: vm set_con_tcp_port R2 5009 
+Nov 12 14:54:31.556 HYPERVISOR: exec_cmd: c3600 get_mac_addr R2 
+Nov 12 14:54:31.557 HYPERVISOR: exec_cmd: vm set_ios R2 /home/iut45/Etudiants/o22303787/GNS3/images/IOS/c3640-ik9o3s-mz.124-25c.image 
+Nov 12 14:54:31.560 HYPERVISOR: exec_cmd: vm get_status R2 
+Nov 12 14:54:31.560 HYPERVISOR: exec_cmd: vm set_idle_pc R2 0x605ef574 
+Nov 12 14:54:31.564 HYPERVISOR: exec_cmd: vm set_ram R2 192 
+Nov 12 14:54:31.568 HYPERVISOR: exec_cmd: vm set_nvram R2 256 
+Nov 12 14:54:31.576 HYPERVISOR: exec_cmd: vm get_status R2 
+Nov 12 14:54:31.577 HYPERVISOR: exec_cmd: vm slot_add_binding R2 0 0 NM-4E 
+Nov 12 14:54:31.675 HYPERVISOR: exec_cmd: vm set_ios R2 /home/iut45/Etudiants/o22303787/GNS3/images/IOS/c3640-ik9o3s-mz.124-25c.image 
+Nov 12 14:55:01.766 HYPERVISOR: exec_cmd: nio create_udp udp-32d9eb2e-4f02-4b93-94ee-23d34f9c46d3 10016 127.0.0.1 10017 
+Nov 12 14:55:02.009 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 0 0 udp-32d9eb2e-4f02-4b93-94ee-23d34f9c46d3 
+Nov 12 14:55:02.014 HYPERVISOR: exec_cmd: vm get_status R2 
+Nov 12 14:55:26.387 HYPERVISOR: exec_cmd: vm set_ghost_status R2 2 
+Nov 12 14:55:26.391 HYPERVISOR: exec_cmd: vm set_ghost_file R2 /home/iut45/Etudiants/o22303787/Documents/Reseau/TP1/nat/project-files/dynamips/c3640-ik9o3s-mz.124-25c.image-192.ghost 
+Nov 12 14:55:26.398 HYPERVISOR: exec_cmd: vm get_status R2 
+Nov 12 14:55:26.399 HYPERVISOR: exec_cmd: vm set_config R2 configs/i2_startup-config.cfg 
+Nov 12 14:55:26.399 HYPERVISOR: exec_cmd: vm start R2 
+Nov 12 14:55:56.652 HYPERVISOR: exec_cmd: vm extract_config R2 
+Nov 12 15:02:26.687 HYPERVISOR: exec_cmd: vm extract_config R2 
+Nov 12 15:02:56.698 HYPERVISOR: exec_cmd: vm extract_config R2 

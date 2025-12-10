@@ -1,0 +1,26 @@
+Nov 12 15:45:21.485 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Nov 12 15:45:21.485 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 33409.
+Nov 12 15:45:21.493 HYPERVISOR: exec_cmd: hypervisor version 
+Nov 12 15:45:21.495 HYPERVISOR: exec_cmd: hypervisor working_dir /home/iut45/Etudiants/o22303787/Documents/Reseau/TP1/nat1/project-files/dynamips 
+Nov 12 15:45:21.495 GENERAL: working_dir=/home/iut45/Etudiants/o22303787/Documents/Reseau/TP1/nat1/project-files/dynamips
+Nov 12 15:45:21.495 HYPERVISOR: exec_cmd: hypervisor working_dir /home/iut45/Etudiants/o22303787/Documents/Reseau/TP1/nat1/project-files/dynamips/bcc6b615-fa69-41e5-8524-ab37fce565fe 
+Nov 12 15:45:21.496 GENERAL: working_dir=/home/iut45/Etudiants/o22303787/Documents/Reseau/TP1/nat1/project-files/dynamips/bcc6b615-fa69-41e5-8524-ab37fce565fe
+Nov 12 15:45:21.496 HYPERVISOR: exec_cmd: vm create R2 2 c3600 
+Nov 12 15:45:21.517 VM: VM R2 created.
+Nov 12 15:45:21.519 HYPERVISOR: exec_cmd: vm set_con_tcp_port R2 5019 
+Nov 12 15:45:21.519 HYPERVISOR: exec_cmd: c3600 get_mac_addr R2 
+Nov 12 15:45:21.520 HYPERVISOR: exec_cmd: vm get_status R2 
+Nov 12 15:45:21.520 HYPERVISOR: exec_cmd: vm set_idle_pc R2 0x605ef574 
+Nov 12 15:45:21.523 HYPERVISOR: exec_cmd: vm set_ios R2 /home/iut45/Etudiants/o22303787/GNS3/images/IOS/c3640-ik9o3s-mz.124-25c.image 
+Nov 12 15:45:21.526 HYPERVISOR: exec_cmd: c3600 set_mac_addr R2 cc02.c6e4.0000 
+Nov 12 15:45:21.528 HYPERVISOR: exec_cmd: vm set_nvram R2 256 
+Nov 12 15:45:21.530 HYPERVISOR: exec_cmd: vm set_ram R2 192 
+Nov 12 15:45:21.533 HYPERVISOR: exec_cmd: vm get_status R2 
+Nov 12 15:45:21.533 HYPERVISOR: exec_cmd: vm slot_add_binding R2 0 0 NM-4E 
+Nov 12 15:45:23.043 HYPERVISOR: exec_cmd: vm get_status R2 
+Nov 12 15:45:23.044 HYPERVISOR: exec_cmd: vm extract_config R2 
+Nov 12 15:45:23.060 HYPERVISOR: exec_cmd: vm delete R2 
+Nov 12 15:45:23.060 VM: VM R2 destroyed.
+Nov 12 15:45:23.072 HYPERVISOR: exec_cmd: hypervisor stop 
+Nov 12 15:45:23.492 HYPERVISOR: Stopped.
+Nov 12 15:45:23.492 GENERAL: reset done.
